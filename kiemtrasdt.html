@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtra(sdt) {
+        mau=/^[(][0-9]{2}[)][-][(][0][0-9]{9}[)]$/;
+        if (mau.test(sdt)){
+            console.log(sdt+" :"+"so dien thoai hop le")
+        } else {
+            console.log(sdt+" : "+"so dt khong hop le")
+        }
+    }
+    let sdt="(84)-(0978486948)";
+    let sdt2="(a4)-(22222222)";
+    kiemtra(sdt);
+    kiemtra(sdt2);
+</script>
+</body>
+</html>
